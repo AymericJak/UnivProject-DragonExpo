@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Cinzel&family=Kaushan+Script&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Alegreya',serif;
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ############################# MENU ############################ */
+
+nav{
+    overflow: hidden;
+    background-color: #f5dedeef;
+    position: fixed;
+    width: 100%;
+    opacity: 0.8;
+    z-index: 100;
+}
+
+header li{
+    float: right;
+    font-size: 1.2em;
+}
+
+header li a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 22px 18px;
+}
+
+#logo{
+    width: 80px;
+    height: 80px;
+    position: fixed; top: 0px; left: 0px;
+}
+
+header .menuBoutton:hover{
+    background-color: rgba(214, 117, 117, 0.938);
+    transition: 220ms;
+}
+
+header .menuBoutton:active{
+    font-weight: bold;
+}
+
+/* ####################### ACCUEIL ######################### */
+
+#image_fond{
+    padding-top: 60px;
+    background: url(../Images/imageFondDragon.jpg) fixed no-repeat 50% 50%;
+    background-size: cover;
+    height: 600px;
+}
+
+h1{
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    color: rgb(223, 19, 19);
+    text-shadow: 1px 3px 2px black;
+    font-size: 6em;
+    margin-top: 75px;
+}
+
+.trait_separation{
+    height: 1px;
+    width: 35%;
+    margin: 10px auto;
+    background-color: rgb(223, 19, 19);
+}
+
+h3{
+    text-align: center;
+    color: rgb(223, 19, 19);
+    text-shadow: 1px 3px 2px black;
+    font-size: 2.5em;
+    padding-top: 60px;
+}
+
+/* ####################### PRESENTATION - GENERALITES(FAQ) ######################### */
+
+.fond_1{
+    background-color: rgb(192, 102, 102);
+    padding: 5px 0px 50px 0px;
+}
+
+.fond_1 p{
+    padding: 0px 22%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#quand p, .fond_1 li{
+    margin: 0 16%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+#pres_suite{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.images_pres img{
+    width: 20em;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 15%;
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.41);
+}
+
+.images_pres img:hover{
+    transform: scale(1.03);
+    transition: 100ms ease-out;
+}
+
+
+/* ##################### HORAIRES ######################## */
+
+.fond_2{
+    background-color: rgb(167, 84, 84);
+    padding: 5px 5% 50px 5%;
+}
+
+#horairesL1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.fond_2 #horairesL1 p{
+    font-size: 1.2rem;
+    text-align: center;
+    width: 25%;
+    height: auto;
+    background-color: burlywood;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 3%;
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.41);
+}
+
+.fond_2 .F2_p p, #milieu_boutique p{
+    margin: 0 16%;
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgba(245, 222, 222, 0.938);
+}
+
+.fond_2 .F2_p a{
+    color: rgb(241, 210, 207);
+}
+
+.fond_2 .F2_p a:hover{
+    transform: scale(1.03);
+    transition: 100ms ease-out;
+    background-color: rgba(119, 31, 31, 0.842);
+    border-radius: 4px;
+}
+
+.fond_2 button{
+    display: block;
+    margin: 0 39%;
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.41);
+}
+
+.fond_2 button:hover{
+    transform: scale(1.03);
+    transition: 100ms ease-out;
+    background-color: rgb(241, 210, 207);
+}
+
+
+/* ##################### ACTIVITES PROPOSEES ####################### */
+
+.fond_3{
+    background-color: rgba(119, 31, 31, 0.842);
+    padding: 5px 5% 50px 5%;
+    text-align: center;
+}
+
+.fond_3 p{
+    margin: 0 16%;
+    font-size: 1.2rem;
+    color: rgba(245, 222, 222, 0.938);
+}
+
+#photos_act{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.images_act img{
+    width: 14em;
+    height: auto;
+    background-color: burlywood;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 20%;
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.41);
+}
+
+.images_act img:hover{
+    transform: scale(1.03);
+    transition: 100ms ease-out;
+}
+
+/* #################### FORMULAIRE ############################ */
+
+footer{
+    background-color: rgba(83, 22, 22, 0.842);
+    padding: 10px 0 30px 0;
+    text-align: center;
+}
+
+form{
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+input, textarea, button{
+    font-size: 1.1em;
+    font-family: 'Alegreya',serif;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 10px;
+    margin: 2px;
+    width: 45%;
+    background-color: rgba(245, 222, 222, 0.938);
+    outline: none;
+}
+
+textarea{
+    height: 150px;
+}
+
+button{
+    width: 23%;
+    cursor: pointer;
+}
+
+#buttonAnnuler:hover{
+    background-color: rgb(177, 37, 37);
+    transition: 220ms;
+    color: white;
+    font-weight: bold;
+}
+
+#buttonEnvoyer:hover{
+    background-color: rgb(36, 105, 36);
+    transition: 220ms;
+    color: white;
+    font-weight: bold;
+}
+
+#separation_form{
+    height: 1px;
+    width: 50%;
+    margin: 5% auto;
+    background-color: rgba(245, 222, 222, 0.938);
+}
+
+#CopyrightIcone{
+    display: flex;
+    justify-content: space-evenly;
+    color: rgba(245, 222, 222, 0.938);
+}
+
+#icone a{
+    display: inline-block;
+    margin: 0 10px;
+    color: rgba(245, 222, 222, 0.938);
+}
+
+
+
+/* #################### AUTRE ############################ */
+
+figcaption{
+    background-color: #f5dedeef;
+    color: #000000;
+    border-radius: 4px;
+    font-style: italic;
+    text-align: center;
+    padding: 3px;
+}
